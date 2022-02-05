@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Strong Password Generator</title>
+</head>
+<body>
+
+    <!-- Main Header -->
+    <header class="header">
+        <a href="./" class="header__anchor">Strong Password Generator</a>
+        <button class="toggle-navigation">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header__navigation">
+            <a href="#">
+                About
+            </a>
+            <a href="#">
+                Security Tips
+            </a>
+            <a href="#">
+                Contact
+            </a>
+            <a href="#">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Password Generator Container -->
+    <section class="password_generator">
+        <div class="password_generator__introduce">
+            <h2>How about making your password stronger?</h2>
+            <p>Decrease the chances of hacker attacks against your web accounts.</p>
+            <p>Generate a strong password for your account right now.</p>
+        </div>
+        <div class="password_generator__form">
+            <div>
+                <div class="password_generator__form__item">
+                    <input type="text" name="" id="password" placeholder="Create your password" readonly>
+                </div>
+                <div class="password_generator__form__item">
+                    <div id="button" class="btn1" onclick="genPassword()">
+                        <ion-icon name="refresh-outline"></ion-icon> Generate password
+                    </div>
+                </div>
+                <div class="password_generator__form__item">
+                    <a  id="button" class="btn2" onclick="copyPassword()">
+                        <ion-icon name="copy-outline"></ion-icon> Copy Password
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Password Tips -->
+    <section class="password_tips">
+        <h3>Password security: How to create strong passwords in 5 steps</h3>
+        <p>
+            Living in the 21st century means knowing that the words “password” and “security” go hand in hand. In order to keep your accounts, 
+            information, and devices Cyber Safe, you'll need to know how to create a strong password. But you may be asking yourself, “What is a good password?”
+        </p>
+        <p>
+            Here are instructions on how to create a strong password that you can rely on:
+        </p>
+        <ol>
+            <li>
+                <strong>Never use personal information:</strong> Strong passwords shouldn’t include references to personal information such as  names, birthdays, addresses, 
+                or phone numbers.
+            </li>
+            <li>
+                <strong>Include a combination of letters, numbers, and symbols:</strong> Secure  passwords include a variety of random characters, numbers, and letters to make 
+                the password more complex.
+            </li>
+            <li>
+                <strong>Prioritize password length:</strong> Safe passwords should be at least 16 characters long to lessen the chances of falling victim to a data breach or cyberattack.
+            </li>
+            <li>
+                <strong>Never repeat passwords:</strong> Reusing the same password for different accounts puts you at risk of credential stuffing attacks frequently used by cybercriminals.
+            </li>
+            <li>
+                <strong>Avoid using real words:</strong> Hackers use malicious programs that can process every word found in a dictionary to crack passwords. Stay away from using proper 
+                nouns and other standalone dictionary words that could lead to an unsecure password.
+            </li>
+        </ol>
+        <h3 class="heading_two">Why is password security important?</h3>
+        <p>
+            With 68 percent of people reusing the same security password for different accounts, it's needless to note that the majority of people need to rethink their password security. 
+            Hackers have been diligent in ideating new techniques to steal your information, putting your data, privacy, and cybersecurity at risk. 
+        </p>
+        <p>
+            Without having password security best practices top of mind, individuals and businesses alike could be leaving themselves open to cybersecurity threats. 
+            Some potential consequences of weak password security include:
+        </p>
+        <ul>
+            <li>Data breaches</li>
+            <li>Identity theft</li>
+            <li>Computer hijacking</li>
+            <li>Blackmail</li>
+            <li>Loss of privacy </li>
+        </ul>
+        <p>
+            Inadequate password security could not only endanger the Cyber Safety of individuals and customers, but also could lead to financial troubles. Cybercriminals are 
+            often looking for ways to access personal banking information or use ransomware to make themselves a profit. Businesses and individuals within the U.S. 
+            lost nearly $4.2 billion to cybercrimes within the last year alone.  
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>
+                Copyright &copy; <span class="year"></span> 
+                <a href="mailto:acioliwilson@gmail.com" class="first_anchor">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a href="https://instagram.com/wilsonaciolib">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://github.com/acioliwilson">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://twitter.com/acioliwilson">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

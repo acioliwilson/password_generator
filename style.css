@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    max-width: 1024px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__anchor {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 700;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__navigation > a {
+    text-decoration: none;
+    color: #b2b5bd;
+    font-weight: 400;
+    margin-left: 2em;
+    transition: .3s ease;
+}
+
+.header__navigation > a:hover {
+    color: #121212;
+}
+
+.toggle-navigation {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    #toggleNavigation {
+        display: none;
+    }
+    label {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 1.5em;
+        right: 2em;
+        cursor: pointer;
+    }
+    label > span {
+        width: 100%;
+        height: 3px;
+        background: #121212;
+        display: block;
+        margin-bottom: 5px;
+        border-radius: 3px;
+    }
+    .header__navigation {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        background: #FFF;
+        transition: .3s ease;
+    }
+    .header__navigation > a {
+        margin: 2em 0;
+    }
+    .toggle-navigation {
+        width: 20px;
+        position: absolute;
+        right: 2em;
+        top: 1.8em;
+        cursor: pointer;
+        display: table;
+        border: none;
+        background: none;
+        z-index: 100;
+    }
+    .toggle-navigation > span {
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        display: block;
+        margin-bottom: 5px;
+        position: absolute;
+        right: 0;
+        background: #121212;
+        transition: .3s ease;
+    }
+    .toggle-navigation > span:nth-child(1) {
+        top: 0;
+    }
+    .toggle-navigation > span:nth-child(2) {
+        top: 8px;
+    }
+    .nav-on {
+        left: 0;
+    }
+    .btn-on > span:nth-child(1) {
+        transform: rotate(135deg);
+        top: .5em;
+    }
+    .btn-on > span:nth-child(2) {
+        transform: rotate(-135deg);
+        top: .5em;
+    }
+}
+
+/* Password Generator Container */
+.password_generator {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em auto;
+}
+
+.password_generator__introduce {
+    width: 50%;
+    display: table;
+}
+
+.password_generator__introduce > p {
+    margin: 0;
+}
+
+.password_generator__form {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#password {
+    padding: 10px 20px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    background: #FAFAFA;
+    display: table;
+    width: 250px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    display: table;
+    cursor: pointer;
+}
+
+.btn1 {
+    background: rgb(48, 48, 228);
+    color: #FFF;
+    display: table;
+    transition: .3s ease;
+}
+
+.btn1:hover {
+    background: rgb(41, 41, 187);
+}
+
+.btn2 {
+    background: #F0F0F0;
+    color: #121212;
+    margin-top: 1em;
+    transition: .3s ease;
+}
+
+.btn2:hover {
+    background: #d8d8d8;
+}
+
+/* Password Tips */
+.password_tips {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: table;
+}
+
+.password_tips > h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+ol > li {
+    margin-bottom: 1em;
+}
+
+.heading_two {
+    margin-top: 3em;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    display: flex;
+    background: #121212;
+    color: #fff;
+    margin-top: 3em;
+    padding: 10px 0;
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer > .footer__container > p {
+    display: table;
+}
+
+.footer > .footer__container > a {
+    color: #fff;
+}
+
+.first_anchor {
+    margin-left: 3em;
+}
+
+.footer__container > p > a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+}
