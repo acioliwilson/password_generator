@@ -86,6 +86,7 @@ body {
         justify-content: center;
         background: #FFF;
         transition: .3s ease;
+        z-index: 90;
     }
     .header__navigation > a {
         margin: 2em 0;
@@ -139,6 +140,12 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 4em auto;
+}
+
+@media (max-width: 1024px) {
+    .password_generator {
+        padding: 0 2em;
+    }
 }
 
 .password_generator__introduce {
@@ -206,6 +213,12 @@ body {
     display: table;
 }
 
+@media (max-width: 1024px) {
+    .password_tips {
+        padding: 0 2em;
+    }
+}
+
 .password_tips > h3 {
     text-transform: uppercase;
     font-weight: 700;
@@ -236,6 +249,12 @@ ol > li {
     margin: 0 auto;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .footer__container {
+        padding: 0 2em;
+    }
 }
 
 .footer > .footer__container > p {
